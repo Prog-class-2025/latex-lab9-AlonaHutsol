@@ -1,0 +1,93 @@
+\documentclass[12pt]{article} % Клас документа, шрифт 12pt
+
+\usepackage[utf8]{inputenc} % UTF-8 кодування
+\usepackage[T2A]{fontenc} % Шрифти кирилиці
+\usepackage[ukrainian]{babel} % Українська мова
+\usepackage{geometry} % Поля сторінки
+\geometry{a4paper, margin=2cm} % Формат A4, поля 2 см
+
+\usepackage{xcolor} % Кольори
+\usepackage{tcolorbox} % Кольорові рамки
+\usepackage{graphicx} % Зображення
+\usepackage{amsmath, amsthm, amssymb} % Математика, теореми, символи
+
+\usepackage{caption} % Підписи до рисунків
+\captionsetup{labelsep=period} % Роздільник у підписах "Рис. 1."
+
+\newtheorem{theorem}{Теорема} % Середовище для теорем
+
+\usepackage{fancyhdr} % Колонтитули
+\pagestyle{fancy} % Використання fancyhdr
+\fancyhf{} % Очищення стандартних колонтитулів
+\setlength{\headheight}{15pt} % Висота верхнього колонтитулу
+
+\newcommand{\student}{Введіть прізвище та ім'я} % ПІБ студента
+\newcommand{\labdate}{\today} % Дата
+
+\fancyhead[L]{\student} % Лівий верхній колонтитул
+\fancyhead[R]{\labdate} % Правий верхній колонтитул
+\fancyfoot[C]{\thepage} % Нижній колонтитул — номер сторінки
+
+\begin{document}
+
+\begin{center}
+    \Large \textbf{Лабораторна робота № 9} \\
+    \large \textbf{Тема: Набір математичних текстів та автоматизація в LaTeX}
+\end{center}
+
+\section*{Мета роботи}
+\textit{навчитися вводити математичні формули та структурувати документ, використовувати кольорові рамки для визначень, теорем та прикладів, а також вставляти зображення}.
+
+\section{Короткі теоретичні відомості}
+
+\begin{tcolorbox}[colback=blue!10!white, colframe=blue!80!black, title=Визначення]
+% Введіть визначення квадрата, змініть колір рамки
+\end{tcolorbox}
+
+% Введіть текст \\На рисунку ... дивись зразок. 
+
+%додати зображення, файл foto1.png 
+
+\medskip
+\textit{Властивості квадрата:}
+\begin{enumerate}
+    \item Усі кути квадрата прямі.
+   %Введіть властивості 2-6 за зразком
+\end{enumerate}
+
+%додати зображення, файл foto2.png 
+
+\begin{tcolorbox}[colback=green!5!white, colframe=green!75!black, title=Приклад 1]
+% Введіть текст прикладу за зразком
+\end{tcolorbox}
+
+%додати зображення, файл foto3.png 
+
+\begin{proof}
+\begin{enumerate}
+    \item $\angle MAD = \angle ABK = 45^\circ$, а $AD = AB$ як сторони квадрата.
+   % Введіть текст доведення 2,3 
+\end{enumerate}
+\end{proof}
+
+\section{Ознаки квадрата}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=Ознаки квадрата]
+\begin{theorem}
+% Введіть текст ознаки квадрата 1) 2)
+\end{theorem}
+\end{tcolorbox}
+
+\begin{proof}
+%Введіть текст доведення використовуючи зразок
+\end{proof}
+
+\section*{Контрольні запитання}
+\begin{enumerate}
+    \item Що таке квадрат? Які його властивості?
+    \item Які ознаки квадрата через діагоналі?
+    \item Як вставляти зображення та підпис у LaTeX?
+    \item Як оформити визначення, теорему та приклад у кольоровій рамці?
+\end{enumerate}
+
+\end{document}
