@@ -119,4 +119,7 @@ $P_{ABCD} = 4AB$
 | Пакет      | Призначення            | Приклад |
 |------------|-----------------------|--------|
 | tcolorbox  | Кольорові рамки       | `\begin{tcolorbox}...\end{tcolorbox}` |
+| amsmath    | Робота з математичними формулами       | `\begin{align}...\end{align}` |
+| graphicx   | Вставка зображень                      | `\includegraphics{image.png}` |
+| fancyhdr   | Налаштування колонтитулів сторінки     | `\pagestyle{fancy}` |
 
